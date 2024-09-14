@@ -1,5 +1,5 @@
 # SEMlibmicavr
-Partial [SEMlibmodule][libmodule] hardware implementation for the ATmegs328P, with Arduino Uno the intended target.
+Partial [SEMlibmodule][libmodule] hardware implementation for the ATmega328P, with Arduino Uno the intended target.
 
 ## Usage
 ### Arduino IDE
