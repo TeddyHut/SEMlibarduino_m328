@@ -1,0 +1,26 @@
+# This keywords document uses the following format:
+# @@@ - Namespace level
+# *** - Object level
+# $$$ - Object member function/data
+# ^^^ - Namespace scope function/data
+# &&& - Enum
+
+# @@@ libarduino_m328
+libarduino_m328	KEYWORD2
+
+# @@@ ^^^
+twiSlave0	KEYWORD2
+
+
+# @@@ *** DigitalOut
+DigitalOut	KEYWORD1
+
+# @@@ *** $$$ members
+set	KEYWORD2
+
+
+# @@@ *** DigitalIn
+DigitalIn	KEYWORD1
+
+# @@@ *** $$$ members
+get	KEYWORD2

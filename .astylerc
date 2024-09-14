@@ -1,0 +1,8 @@
+indent-cases
+indent-namespaces
+convert-tabs
+indent=spaces=4
+style=kr
+align-pointer=name
+align-reference=name
+
