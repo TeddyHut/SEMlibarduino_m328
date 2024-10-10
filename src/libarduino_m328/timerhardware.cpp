@@ -57,7 +57,7 @@ void libmodule::time::isr_timer()
 
 void libmodule::time::TimerBase<1000>::handle_isr()
 {
-    for(il_count_t i = 0; i < il_count; i++) {
+    for(il_count_t i = 0; i < il_instances.size(); i++) {
         static_cast<TimerBase *>(il_instances[i])->tick();
     }
 }
