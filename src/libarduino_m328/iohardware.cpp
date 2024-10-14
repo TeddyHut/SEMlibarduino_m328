@@ -10,7 +10,8 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-void libmodule::hw::panic()
+[[gnu::weak]]
+void libmodule::hw::panic(const char *)
 {
     pinMode(LED_BUILTIN, OUTPUT);
     digitalWrite(LED_BUILTIN, true);
@@ -157,7 +158,7 @@ void libarduino_m328::TWISlave0::handle_isr()
         pm_bufpos = 0;
         pm_currenttransaction.buf = pm_sendbuf.buf;
         pm_currenttransaction.dir = TransactionInfo::Type::Send;
-    //[[fallthrough]];
+        [[fallthrough]];
     case 0xb8: //Data byte in TWDR has been transmitted; ACK has been received;
         //If len has been reached, send 0
         if(pm_bufpos >= pm_sendbuf.len)

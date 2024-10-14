@@ -15,7 +15,7 @@ namespace libmodule
 {
     namespace hw
     {
-        void panic();
+        void panic(const char *);
     }
 }
 
